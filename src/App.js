@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.scss'
+import FormContainer from "./components/FormContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <main className="main">
+      <div className="main-form">
+        <div className="main-form-steps">
+          Step 1 of 3 <span className="main-form-steps-activeCircle" /> <span /> <span />
+        </div>
+        <FormContainer />
+      </div>
+      <div className="main-content">
+        <h1 className="main-content-title"> Dummy Heading </h1>
+        <p className="main-content-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+    </main>
   );
 }
 

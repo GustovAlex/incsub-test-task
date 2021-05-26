@@ -1,0 +1,124 @@
+.form {
+    font-family: "Roboto", sans-serif;
+    width: 480px;
+
+    &-title {
+        color: #333333;
+        font-weight: bold;
+        size: 32px;
+        margin-bottom: 40px;
+    }
+
+    &-paragraph {
+        color: #333333;
+        font-size: 15px;
+        margin-bottom: 40px;
+
+        & a {
+            font-weight: bold;
+            color: #286efa;
+            text-decoration: none;
+        }
+    }
+
+    &-input-margin {
+        margin-bottom: 20px;
+    }
+
+    &-message {
+        color: #777777;
+        font-size: 12px;
+        letter-spacing: 0.26px;
+    }
+
+    &-error {
+        color: #f53c3c;
+        margin-bottom: 20px;
+    }
+
+    &-button {
+        width: 100%;
+        outline: none;
+        border: none;
+        height: 50px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: bold;
+        background: #286efa;
+        color: #ffffff;
+        margin-top: 30px;
+
+        &:disabled {
+            background: #ededed;
+            color: #aaaaaa;
+        }
+    }
+
+    &-privatePolicy {
+        color: #333333;
+        font-size: 13px;
+        margin-top: 40px;
+
+        & a {
+            font-weight: bold;
+            color: #286efa;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+    .form {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        width: 320px;
+
+        &-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        &-paragraph {
+            margin-bottom: 20px;
+        }
+
+        &-button {
+            margin-top: 15px;
+        }
+
+        &-privatePolicy {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        width: 300px;
+
+        &-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        &-paragraph {
+            margin-bottom: 10px;
+        }
+
+        &-input-margin {
+            margin-bottom: 10px;
+        }
+
+        &-button {
+            margin-top: 10px;
+        }
+
+        &-privatePolicy {
+            margin-top: 10px;
+        }
+    }
+}

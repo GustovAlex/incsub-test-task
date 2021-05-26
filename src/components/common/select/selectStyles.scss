@@ -1,0 +1,40 @@
+.select {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+
+    & input {
+        width: 100%;
+        outline: none;
+        height: 50px;
+        box-sizing: border-box;
+        font-size: 15px;
+        border: 1px solid #ededed;
+        border-radius: 2px;
+        color: #777777;
+        padding: 15px 10px;
+    }
+
+    &-styles {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        &-option {
+            cursor: pointer;
+            font-size: 15px;
+            color: #777777;
+        }
+    }
+}
+
+.arrowIcon {
+    width: fit-content;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    color: #333333;
+}
